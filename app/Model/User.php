@@ -5,6 +5,14 @@ use PotterORM\BaseModel as Base;
 class User extends Base
 {
 	static protected $table = 'users';
-	static protected $pk = 'user_id';
-	static protected $fields = array('username', 'password', );
+	static protected $pk = 'id';
+	static protected $fields = array('email', 'password');
+
+    public function save()
+    {
+        if (!$this->exists())
+            $this->values['password'] = encrypt($this->values['password']);
+
+        parent::save();
+    }
 }

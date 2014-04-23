@@ -1,6 +1,6 @@
 <?php
 error_reporting(-1);
-require 'vendor/autoload.php';
+require 'vendor/php/autoload.php';
 
 function array_extract($array, array $cols)
 {
@@ -8,6 +8,11 @@ function array_extract($array, array $cols)
 	foreach ($cols as $col)
 		$vals[$col] = $array[$col];
 	return $vals;
+}
+
+// lol swag
+function encrypt($pass) {
+    return md5($pass);
 }
 
 define('BASEPATH', dirname($_SERVER['SCRIPT_NAME']) . '/');

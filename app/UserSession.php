@@ -7,7 +7,7 @@ class UserSession
 	public function __construct(PDO $db, $key = 'user_id')
 	{
 		if (isset($_SESSION[$key])) {
-			if ($user = Model\User::find(array($key => $_SESSION[$key]))) {
+			if ($user = Model\User::find($_SESSION[$key])) {
 				$this->user = new Model\User($user);
 			}
 		}

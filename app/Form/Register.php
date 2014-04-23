@@ -4,18 +4,20 @@ use Minima\Form\Base;
 
 class Register extends Base
 {
-	protected $fields = array('username', 'password');
+	protected $fields = array('email', 'password');
 
 	protected $validations = array(
 		'mandatory' => array(
-			'username', 'password',
+			'email', 'password',
 		),
 		'pattern' => array(
-			'username' => '/^[A-Z][a-z_-]{7,15}$/',
-			'password' => '/^.{8,16}$/',
+			'password' => '/^.{6,16}$/',
 		),
+        'filter' => array(
+            'email' => FILTER_VALIDATE_EMAIL,
+        ),
 		'unique' => array(
-			'username' => 'users',
+			'email' => 'users',
 		),
 	);
 } 
