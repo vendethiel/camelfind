@@ -32,41 +32,6 @@
         "description": "Magical (and bad) ORM"
     },
     {
-        "name": "minima-php/minima-php",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/minima-php/minima-php.git",
-            "reference": "db93663fea2c10eae2ea744a48ff31e4db4a4557"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/minima-php/minima-php/zipball/db93663fea2c10eae2ea744a48ff31e4db4a4557",
-            "reference": "db93663fea2c10eae2ea744a48ff31e4db4a4557",
-            "shasum": ""
-        },
-        "require": {
-            "minima-php/potter-orm": "1.0.0"
-        },
-        "time": "2014-04-23 08:17:21",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "": "lib"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Vendethiel",
-                "email": "vendethiel@hotmail.fr"
-            }
-        ],
-        "description": "Minimal, experimental PHP framework"
-    },
-    {
         "name": "mthaml/mthaml",
         "version": "1.3.0",
         "version_normalized": "1.3.0.0",
@@ -304,5 +269,43 @@
             }
         ],
         "description": "Sprockets-PHP is Sprockets (Rails Asset Pipeline) for PHP"
+    },
+    {
+        "name": "minima-php/minima-php",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/minima-php/minima-php.git",
+            "reference": "952bc204a674c7c8c74d3626568edf95794dbe11"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/minima-php/minima-php/zipball/952bc204a674c7c8c74d3626568edf95794dbe11",
+            "reference": "952bc204a674c7c8c74d3626568edf95794dbe11",
+            "shasum": ""
+        },
+        "require": {
+            "minima-php/potter-orm": "1.0.0"
+        },
+        "time": "2014-04-23 08:39:25",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "": "lib"
+            },
+            "files": [
+                "lib/Minima/Helper/base.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Vendethiel",
+                "email": "vendethiel@hotmail.fr"
+            }
+        ],
+        "description": "Minimal, experimental PHP framework"
     }
 ]

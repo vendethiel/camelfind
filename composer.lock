@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a57414d41c264fb14f7b472c39ca707e",
+    "hash": "8bf6ae5473b08342bd7a2347befd4145",
     "packages": [
         {
             "name": "coffeescript/coffeescript",
@@ -92,16 +92,16 @@
         },
         {
             "name": "minima-php/minima-php",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minima-php/minima-php.git",
-                "reference": "db93663fea2c10eae2ea744a48ff31e4db4a4557"
+                "reference": "952bc204a674c7c8c74d3626568edf95794dbe11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minima-php/minima-php/zipball/db93663fea2c10eae2ea744a48ff31e4db4a4557",
-                "reference": "db93663fea2c10eae2ea744a48ff31e4db4a4557",
+                "url": "https://api.github.com/repos/minima-php/minima-php/zipball/952bc204a674c7c8c74d3626568edf95794dbe11",
+                "reference": "952bc204a674c7c8c74d3626568edf95794dbe11",
                 "shasum": ""
             },
             "require": {
@@ -111,7 +111,10 @@
             "autoload": {
                 "psr-0": {
                     "": "lib"
-                }
+                },
+                "files": [
+                    "lib/Minima/Helper/base.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
@@ -121,7 +124,7 @@
                 }
             ],
             "description": "Minimal, experimental PHP framework",
-            "time": "2014-04-23 08:17:21"
+            "time": "2014-04-23 08:39:25"
         },
         {
             "name": "minima-php/potter-orm",

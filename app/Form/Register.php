@@ -4,7 +4,7 @@ use Minima\Form\Base;
 
 class Register extends Base
 {
-	protected $fields = array('username', 'password', );
+	protected $fields = array('username', 'password');
 
 	protected $validations = array(
 		'mandatory' => array(

@@ -6,9 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Controller\\Misc' => $baseDir . '/app/Controller/Misc.php',
-    'Form\\Register' => $baseDir . '/app/Form/Register.php',
-    'Model\\User' => $baseDir . '/app/Model/User.php',
     'SassBoolean' => $vendorDir . '/richthegeek/phpsass/script/literals/SassBoolean.php',
     'SassBooleanException' => $vendorDir . '/richthegeek/phpsass/script/literals/SassLiteralExceptions.php',
     'SassColour' => $vendorDir . '/richthegeek/phpsass/script/literals/SassColour.php',
@@ -79,7 +76,6 @@ return array(
     'SassWarnNode' => $vendorDir . '/richthegeek/phpsass/tree/SassWarnNode.php',
     'SassWhileNode' => $vendorDir . '/richthegeek/phpsass/tree/SassWhileNode.php',
     'SassWhileNodeException' => $vendorDir . '/richthegeek/phpsass/tree/SassNodeExceptions.php',
-    'UserSession' => $baseDir . '/app/UserSession.php',
     'lessc' => $vendorDir . '/leafo/lessphp/lessc.inc.php',
     'lessc_formatter_classic' => $vendorDir . '/leafo/lessphp/lessc.inc.php',
     'lessc_formatter_compressed' => $vendorDir . '/leafo/lessphp/lessc.inc.php',

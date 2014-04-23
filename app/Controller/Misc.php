@@ -1,14 +1,14 @@
 <?php
 namespace Controller;
 use Minima\Controller\Base;
-use Model;
+use \Model;
 
 class Misc extends Base
 {
-	/*
-	public function homeAction($params)
+	public function homeAction()
 	{
-		return array();
+		return array(
+			'articles' => Model\Article::findAll(),
+		);
 	}
-	*/
 }

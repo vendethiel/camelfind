@@ -1,11 +1,12 @@
 {
+	"name": "nami-doc/camelfind",
 	"autoload": {
-		"classmap": [
-			"app"
-		]
+		"psr-0": {
+			"": ["app"]
+		}
 	},
 	"require": {
-		"minima-php/minima-php": "1.0.1",
+		"minima-php/minima-php": "~1.0.0",
 		"nami-doc/sprockets-php": "2.1.0"
 	}
 }
