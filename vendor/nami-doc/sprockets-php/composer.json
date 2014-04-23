@@ -1,0 +1,21 @@
+{
+    "name": "Nami-Doc/Sprockets-PHP",
+    "description": "Sprockets-PHP is Sprockets (Rails Asset Pipeline) for PHP",
+    "autoload": {
+        "psr-0": {
+            "": "lib"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vendethiel",
+            "email": "vendethiel@hotmail.fr"
+        }
+    ],
+    "require": {
+        "mthaml/mthaml": "1.3.0",
+        "coffeescript/coffeescript": "1.3.1",
+        "leafo/lessphp": "0.4.0",
+        "richthegeek/phpsass": "2012-06-27"
+    }
+}

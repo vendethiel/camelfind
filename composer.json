@@ -5,7 +5,7 @@
 		]
 	},
 	"require": {
-		"minima-php/minima-php": "1.0.0",
+		"minima-php/minima-php": "1.0.1",
 		"nami-doc/sprockets-php": "2.1.0"
 	}
 }
