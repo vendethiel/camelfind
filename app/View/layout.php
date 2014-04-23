@@ -25,7 +25,7 @@
                 <?php endif ?>
             </div>
 			<div class="row marketing">
-                <div class="col-lg-12"><?php echo $data ?></div>
+                <?php echo $data ?>
             </div>
             <div class="footer">
                 <p>&copy; Minima 2014</p>

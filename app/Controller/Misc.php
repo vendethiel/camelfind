@@ -9,6 +9,7 @@ class Misc extends Base
 	{
 		return array(
 			'articles' => Model\Article::findAll(),
-		);
+		    'random_places' => Model\Place::findAll(array(), array('limit' => 5, 'order' => 'RAND()'))
+        );
 	}
 }
