@@ -1,6 +1,11 @@
 .p-marged
   margin-left: 20px
 
+$displays = inline block inline-block
+for $display in $displays
+  .{$display}
+    display $display
+
 form.aligned
   // align form
   // I've been using that css for what, 15 years now ?
