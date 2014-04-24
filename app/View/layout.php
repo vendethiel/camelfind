@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Exemple Minima Application</title>
+		<title>Camel Find</title>
 		<link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>vendor/bower/bootstrap/dist/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>vendor/jumbotron.css" />
 		<link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>app/Stylesheet/style.css" />

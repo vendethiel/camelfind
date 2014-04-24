@@ -1,1 +1,0 @@
-<h1><?php echo get_hello_message(); ?></h1>

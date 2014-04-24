@@ -1,0 +1,73 @@
+[
+    {
+        "name": "minima-php/potter-orm",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/minima-php/potter-orm.git",
+            "reference": "c937c2599a464288615cf942b68e377dd7312221"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/minima-php/potter-orm/zipball/c937c2599a464288615cf942b68e377dd7312221",
+            "reference": "c937c2599a464288615cf942b68e377dd7312221",
+            "shasum": ""
+        },
+        "time": "2014-04-23 15:42:34",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "": "lib"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Vendethiel",
+                "email": "vendethiel@hotmail.fr"
+            }
+        ],
+        "description": "Magical (and bad) ORM"
+    },
+    {
+        "name": "minima-php/minima-php",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/minima-php/minima-php.git",
+            "reference": "b1a6184f71c6c3b7933f9105f76e39419b36454d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/minima-php/minima-php/zipball/b1a6184f71c6c3b7933f9105f76e39419b36454d",
+            "reference": "b1a6184f71c6c3b7933f9105f76e39419b36454d",
+            "shasum": ""
+        },
+        "require": {
+            "minima-php/potter-orm": "1.0.1"
+        },
+        "time": "2014-04-23 15:44:26",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "": "lib"
+            },
+            "files": [
+                "lib/Minima/Helper/base.php",
+                "lib/Minima/Helper/input.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Vendethiel",
+                "email": "vendethiel@hotmail.fr"
+            }
+        ],
+        "description": "Minimal, experimental PHP framework"
+    }
+]
