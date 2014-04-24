@@ -1,0 +1,22 @@
+{
+  "name": "minima-php/minima-php",
+  "description": "Minimal, experimental PHP framework",
+  "autoload": {
+    "psr-0": {
+      "": "lib"
+    },
+    "files": [
+      "lib/Minima/Helper/base.php",
+      "lib/Minima/Helper/input.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Vendethiel",
+      "email": "vendethiel@hotmail.fr"
+    }
+  ],
+  "require": {
+    "minima-php/potter-orm": "1.0.1"
+  }
+}
