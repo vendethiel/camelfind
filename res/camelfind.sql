@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 24, 2014 at 01:14 PM
+-- Generation Time: Apr 24, 2014 at 01:18 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `camelfind`
 --
+CREATE DATABASE IF NOT EXISTS `camelfind` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `camelfind`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `articles`
+--
+
+CREATE TABLE IF NOT EXISTS `articles` (
+  `id` int(9) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `articles`
+--
+
+INSERT INTO `articles` (`id`, `title`, `content`, `created_at`) VALUES
+(1, 'Bienvenue !', 'Salut a toi, jeune voyageur pd comme un margaine', '2014-04-23 09:09:29'),
+(2, 'dasdasd', 'dasdas', '0000-00-00 00:00:00'),
+(3, 'aafgfga', 'asdafsdafsd', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -1964,6 +1989,26 @@ INSERT INTO `places` (`id`, `address`, `description`, `k`, `a`, `category_id`) V
 (1973, '81 BLD MASSENA 75013 PARIS France', 'liste_des_sites_des_hotspots_paris_wifi', 48.8209, 2.3682, 3),
 (1974, '1, Place De La Republique Dominicaine 75008 PARIS France', 'liste_des_sites_des_hotspots_paris_wifi', 48.8735, 2.31079, 3),
 (1975, '209 rue Lafayette 75010 PARIS France', 'liste_des_sites_des_hotspots_paris_wifi', 48.8811, 2.36401, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`) VALUES
+(1, 'foo@foo.foo', 'fdba98970961edb29f88241b9d99d890');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
