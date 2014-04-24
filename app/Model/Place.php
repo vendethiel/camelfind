@@ -1,8 +1,8 @@
 <?php
 namespace Model;
-use PotterORM\BaseModel;
+use PotterORM\Base;
 
-class Place extends BaseModel
+class Place extends Base
 {
     static protected $table = 'places';
     static protected $pk = 'id';

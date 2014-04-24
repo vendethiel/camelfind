@@ -1,6 +1,6 @@
 <?php
 namespace Model;
-use PotterORM\BaseModel as Base;
+use PotterORM\Base;
 
 class Article extends Base
 {

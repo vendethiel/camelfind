@@ -27,7 +27,7 @@ try {
 		$db_config['user'], $db_config['pass'],
 		array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"));
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	PotterORM\BaseModel::setDb($db);
+	PotterORM\Base::setDb($db);
 
 	$router->setVariables(array(
 		'db' => $db,
