@@ -1,14 +1,13 @@
 <html>
 <head>
-  <title>Camel Find</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>vendor/bower/bootstrap/dist/css/bootstrap.css" />
+    <title>Camel Find</title>
+   <link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>vendor/bower/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>vendor/jumbotron.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>app/Stylesheet/style.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo BASEPATH ?>app/Stylesheet/home.css" />
   <meta charset="utf-8" />
 </head>
 <body class="truc">
-    <img src="<?php echo BASEPATH ?>public/Logo.png" label="logo"></img>
     <div class="container">
         <div class="header">
             <ul class="nav nav-pills pull-right">
@@ -22,7 +21,7 @@
         <?php endif ?>
         <li><a href="#">Welcome</a></li>
     </ul>
-    <h3 class="text-muted">Camel Find</h3>
+    <h3 class="text-muted"><img src="<?php echo BASEPATH ?>public/Logo.png" label="logo"></img></h3>
     <?php if ($session->getUser()): ?>
     Connecté en tant que <b><?php echo $session->getUser()['email'] ?></b>.
 <?php endif ?>
