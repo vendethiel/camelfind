@@ -17,7 +17,7 @@ class Place extends Base
     	$form = new Form\Search($_POST);
         if ($this->method == 'POST' && $form->isValid()) {
             $category = Model\Category::find($form->getValues()['category']);
-            return array('category' => $category,
+            return array('category' => $category, 'form' => $form,
                 'places' => Model\Place::findAll(array('category_id' => $category->getPk()))
             );
         }
