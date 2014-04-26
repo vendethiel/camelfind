@@ -15,4 +15,9 @@ class User extends Base
 
         parent::save();
     }
+
+    public function getFullname()
+    {
+        return $this['first_name'] . ' ' . $this['last_name'];
+    }
 }
