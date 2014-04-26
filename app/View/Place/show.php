@@ -11,3 +11,21 @@ var options = {center: latlng, zoom: 19, mapTypeId: google.maps.MapTypeId.SATELL
 var map = new google.maps.Map(document.getElementById('map'), options);
 var marker = new google.maps.Marker({position: latlng, map: map});
 </script>
+
+<hr/>
+<?php if ($session->getUser()): ?>
+<form class="aligned" action="<?php echo url('place/'.$place['id'].'/comment/new') ?>" method="POST">
+    <?php echo $comment_form->input('content', 'Laissez un commentaire') ?>
+    <input type="submit"/>
+</form>
+<?php endif ?>
+
+<?php if (count($comments)): ?>
+<ul>
+    <?php foreach ($comments as $comment): $commenter = $users[$comment['user_id']]; ?>
+        <li>(<b>auteur : <?php echo link_to('profile/'.$commenter->getPk(), $commenter->getFullname()) ?>)</b> <?php echo $comment['content'] ?></li>
+    <?php endforeach ?>
+</ul>
+<?php else: ?>
+<b>Aucun commentaire !</b>
+<?php endif ?>
