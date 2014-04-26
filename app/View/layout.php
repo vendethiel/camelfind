@@ -11,13 +11,14 @@
 <div class="container">
     <div class="header">
         <ul class="nav nav-pills pull-right">
-            <li><a href="<?php echo url('') ?>">Home</a></li>
+            <li><a  href="<?php echo url('') ?>">Home</a></li>
             <li><a href="<?php echo url('place/search')?>">Recherche</a></li>
             <?php if ($session->getUser()): ?>
-            <li><a href="<?php echo url('logout') ?>">Déconnexion</a></li>
+                <li><?php echo link_to('profile/'.$session->getUser()->getPk(), 'Mon profil') ?></li>
+                <li><a href="<?php echo url('logout') ?>">Déconnexion</a></li>
             <?php else: ?>
-            <li><a href="<?php echo url('login') ?>">Connexion</a></li>
-            <li><a href="<?php echo url('register') ?>">Inscription</a></li>
+                <li><a href="<?php echo url('login') ?>">Connexion</a></li>
+                <li><a href="<?php echo url('register') ?>">Inscription</a></li>
             <?php endif ?>
         </ul>
         <h3 class="text-muted"><img src="<?php echo BASEPATH ?>public/Logo.png" label="logo"></h3>

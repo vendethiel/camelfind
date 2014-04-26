@@ -17,4 +17,10 @@ class User extends Base
         }
         return array('form' => $form);
     }
-} 
+    
+    public function showAction($params)
+    {
+        $this->assert($user = Model\User::find($params['id']));
+        return array('user' => $user);
+    }
+}
