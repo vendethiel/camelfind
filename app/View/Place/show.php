@@ -1,4 +1,4 @@
-<h3 class="inline">Lieu : <b><?php echo $place['name'] ?></b> &bull; <i><?php echo $place['file'] ?></i></h3>
+<h3 class="inline">Lieu : <b><?php echo $place['address'] ?></b> <i>(<?php echo $category['name'] ?>)</i></h3>
 <br/><br/>
 
 <div id="map" style="width: 100%; height: 100%;"></div>

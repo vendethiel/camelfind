@@ -9,7 +9,8 @@ class Place extends Base
     public function showAction($params)
     {
         $this->assert($place = Model\Place::find($params['id']));
-        return array('place' => $place);
+        $this->assert($category = Model\Category::find($place['category_id']));
+        return array('place' => $place, 'category' => $category);
     }
 
     public function searchAction()
