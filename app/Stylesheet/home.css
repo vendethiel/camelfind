@@ -1,0 +1,17 @@
+.truc
+{
+	margin-top: 150px;
+	background-image:url(../../public/camel.jpg);
+	background-position:center center;
+	background-repeat: no-repeat;
+}
+
+.color
+{
+	background-color : black;
+}
+
+.color a 
+{
+	color : white;
+}

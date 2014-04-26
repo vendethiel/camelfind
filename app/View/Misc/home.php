@@ -21,7 +21,7 @@
     <b>5 places au hasard :</b>
     <ul>
         <?php foreach ($random_places as $place): ?>
-        <li><?php echo link_to('place/'.$place->getPk(), $place['name']) ?></li>
+        <li><?php echo link_to('place/'.$place->getPk(), $place['address']) ?></li>
         <?php endforeach ?>
     </ul>
 </div>
