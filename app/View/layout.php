@@ -19,7 +19,6 @@
             <li><a href="<?php echo url('register') ?>">Inscription</a></li>
             <li><a href="<?php echo url('place/search')?>">Recherche</a></li>
         <?php endif ?>
-        <li><a href="#">Welcome</a></li>
     </ul>
     <h3 class="text-muted"><img src="<?php echo BASEPATH ?>public/Logo.png" label="logo"></img></h3>
     <?php if ($session->getUser()): ?>
@@ -30,7 +29,7 @@
     <?php echo $data ?>
 </div>
 <div class="footer">
-    <p>&copy; Minima 2014    &copy; Camel Team</p>
+    <p>&copy; Camel Team</p>
     <p></p>
 </div>
 </div>
