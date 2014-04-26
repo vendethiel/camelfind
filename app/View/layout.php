@@ -13,6 +13,7 @@
             <ul class="nav nav-pills pull-right">
                 <li class="btn btn-default color"><a  href="<?php echo url('') ?>">Home</a></li>
                 <?php if ($session->getUser()): ?> 
+                <li><?php echo link_to('profile/'.$session->getUser()->getPk(), 'Mon profil') ?></li>
                 <li><a href="<?php echo url('logout') ?>">Déconnexion</a></li>
             <?php else: ?>  
             <li><a href="<?php echo url('login') ?>">Connexion</a></li>

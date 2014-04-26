@@ -10,6 +10,7 @@ return array(
 
     'login' => 'Session#new',
     'logout' => 'Session#delete',
+    
     'register' => 'User#new',
-
+	'profile/:id' => 'User#show'
 );
