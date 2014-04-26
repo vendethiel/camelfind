@@ -35,7 +35,7 @@ class Place extends Base
         $values = array();
 
         foreach (Model\Place::findAll(array('category_id' => $category->getPk())) as $place)
-            $values[] = $place->getValues();
+            $values[] = $place['address'];
         exit(json_encode($values));
     }
 }
