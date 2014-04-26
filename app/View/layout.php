@@ -11,12 +11,12 @@
     <div class="container">
         <div class="header">
             <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="<?php echo url('') ?>">Home</a></li>
-                <?php if ($session->getUser()): ?>
+                <li class="btn btn-default color"><a  href="<?php echo url('') ?>">Home</a></li>
+                <?php if ($session->getUser()): ?> 
                 <li><a href="<?php echo url('logout') ?>">Déconnexion</a></li>
-            <?php else: ?>
-            <li><a href="<?php echo url('login') ?>">Se connecter</a></li>
-            <li><a href="<?php echo url('register') ?>">S'inscrire</a></li>
+            <?php else: ?>  
+            <li><a href="<?php echo url('login') ?>">Connexion</a></li>
+            <li><a href="<?php echo url('register') ?>">Inscription</a></li>
             <li><a href="<?php echo url('place/search')?>">Recherche</a></li>
         <?php endif ?>
         <li><a href="#">Welcome</a></li>
