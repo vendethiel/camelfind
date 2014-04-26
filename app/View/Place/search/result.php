@@ -11,7 +11,7 @@ var places = [];
 places.push(<?php echo json_encode($place->getValues()) ?>);
 <?php endforeach ?>
 
-var addr = <?php echo json_encode($form->getValues()['address']) ?>
+var addr = <?php echo json_encode($form->getValues()['address']);?>
 </script>
 
 <script type="text/javascript">
@@ -51,9 +51,10 @@ lat(addr, function (res) {
 	function search(bdd)
 	{
 		removeSearching();
-		if(calcul(bdd.k, bdd.a, res.k, res.A) < 2) {
+		if(calcul(bdd.k, bdd.a, res.k, res.A) < 1) {
 			var li = document.createElement('li');
-			li.innerHTML = bdd.address;
+			var str = "place/"+bdd.id;
+			li.innerHTML = '<a href="<?php echo url("'+str+'")?>"/>'+bdd.address;
 			ul.appendChild(li);
 		}
 	}
