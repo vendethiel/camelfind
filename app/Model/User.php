@@ -6,7 +6,7 @@ class User extends Base
 {
 	static protected $table = 'users';
 	static protected $pk = 'id';
-	static protected $fields = array('email', 'password');
+	static protected $fields = array('email', 'password', 'birthday', 'first_name', 'last_name');
 
     public function save()
     {
