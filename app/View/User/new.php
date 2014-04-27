@@ -6,7 +6,7 @@
 	    <?php echo $form->input('email') ?><br/>
 	    <?php echo $form->input('password', 'Mot de passe', 'password') ?><i>(taille : 8 a 16 caractères)</i><br/>
     </fieldset>
-
+<br/>
 	<fieldset>
 		<legend>Informations Personnelles</legend>
 		<?php echo $form->input('first_name', 'Prénom') ?><br/>
@@ -14,5 +14,5 @@
 		<?php echo $form->input('birthday', 'Date de naissance') ?><i>(format : YYYY-MM-DD)</i><br/>
 	</fieldset>
 
-    <input type="submit"/>
+    <input type="submit"  class="btn btn-primary"/>
 </form>
